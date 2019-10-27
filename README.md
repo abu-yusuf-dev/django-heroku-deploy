@@ -7,13 +7,12 @@ Here is the most simplified steps that i did follow everytime.
 
 Step 1. 
 Create a Procfile in your project root(linux: touch Procfile)
-add this inside the file.
+add this inside the Procfile.
 
 `web: gunicorn project_name.wsgi`
 
 Step 2. 
 Add this in your app/settings.py
-app/settings.py
 ```
 # add this under import os
 import django_heroku 
@@ -23,7 +22,7 @@ django_heroku.settings(locals())
 ```
 
 step-3:
-add these in your requirements.txt:
+add this in your requirements.txt:
 ```
 django
 gunicorn
@@ -32,7 +31,7 @@ psycopg2
 psycopg2-binary
 ```
 
-** `psycopg2` will be need if you run postgres otherwise no need.
+** `psycopg2` will be need for postgres db setup in production.
 
 step-4:
 login to your heroku cli
