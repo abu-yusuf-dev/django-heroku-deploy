@@ -47,7 +47,7 @@ create a new postgres database for your app
 
 step-7: 
 run: `./manage.py makemigrations`
-you need to send migration files to heroku before migrate it there.
+You never need to makemigrations on the heroku server. You should always makemigrations locally then push them to the server. You should only have to migrate on the server.
 
 step-8:
 ```
