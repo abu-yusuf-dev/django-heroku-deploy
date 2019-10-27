@@ -5,13 +5,13 @@ The simplest way to deploy your django app in the heroku sky.
 Deploying in heroku is super easy now. I have almost 10 running applications surve by heroku.
 Here is the most simplified steps that i did follow everytime.
 
-Step 1. 
+Step 1: 
 Create a Procfile in your project root(linux: touch Procfile)
 add this inside the Procfile.
 
 `web: gunicorn project_name.wsgi`
 
-Step 2. 
+Step 2: 
 Add this in your app/settings.py
 ```
 # add this under import os
